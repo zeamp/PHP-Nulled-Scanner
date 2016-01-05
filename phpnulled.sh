@@ -1,5 +1,5 @@
-#!/usr/local/bin/bash
-#  ____ ____ ____ _________ ____ ____ ____ ____ ____ ____ 
+#! /bin/bash
+#  ____ ____ ____ _________ ____ ____ ____ ____ ____ ____
 # ||P |||H |||P |||       |||N |||U |||L |||L |||E |||D ||
 # ||__|||__|||__|||_______|||__|||__|||__|||__|||__|||__||
 # |/__\|/__\|/__\|/_______\|/__\|/__\|/__\|/__\|/__\|/__\|
@@ -15,16 +15,11 @@
 # storage device and delete original the file from your web server. A lot of times, these shady files can
 # be reverse engineered to provide a unique insight into the vulnerability.
 #
+exec >> scanner.txt
 echo "PHP Nulled Script Scanner v2.1"
 echo "By @m3th4mp http://www.geekdime.com"
 echo ""
-echo "Please input the location to your PHP files below."
-echo "Example: /home/mh/public_html/wordpress/"
-echo ""
-read -p "Location: " phplocation
-echo ""
-echo "We will now scan $phplocation..."
-echo ""
+read -p "Enter The Path To Your PHP Files (The Root Directory): " phplocation
 echo "Checking for shell execution strings..."
 grep -Rn "shell_exec" $phplocation
 echo "Done."
@@ -75,3 +70,4 @@ echo "Done."
 echo ""
 echo "Scan completed."
 echo ""
+exec 2>&1
