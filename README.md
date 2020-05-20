@@ -1,4 +1,4 @@
-# PHP Nulled Script Scanner v2.1
+# PHP Nulled Script Scanner v2.2
 
 This script attempts to detect backdoors and hidden code in PHP scripts downloaded from suspicious sources.
 Checks for some common and uncommon strings found in unsafe scripts that may lead to ads, backdoors, etc.
