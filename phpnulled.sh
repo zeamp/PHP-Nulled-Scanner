@@ -4,7 +4,7 @@
 # ||__|||__|||__|||_______|||__|||__|||__|||__|||__|||__||
 # |/__\|/__\|/__\|/_______\|/__\|/__\|/__\|/__\|/__\|/__\|
 #
-# PHP Nulled Script Scanner v2.1 by @m3th4mp (http://www.geekdime.com)
+# PHP Nulled Script Scanner v2.2 by @zeampvqtx (https://sopenguin.com)
 #
 # This script attempts to detect backdoors and hidden code in PHP scripts downloaded from suspicious sources.
 # Checks for some common and uncommon strings found in unsafe scripts that may lead to ads, backdoors, etc.
@@ -16,8 +16,8 @@
 # be reverse engineered to provide a unique insight into the vulnerability.
 #
 exec >> scanner.txt
-echo "PHP Nulled Script Scanner v2.1"
-echo "By @m3th4mp http://www.geekdime.com"
+echo "PHP Nulled Script Scanner v2.2"
+echo "By @zeampvqtx www.sopenguin.com"
 echo ""
 read -p "Enter The Path To Your PHP Files (The Root Directory): " phplocation
 echo "Checking for shell execution strings..."
